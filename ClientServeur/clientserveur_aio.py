@@ -35,3 +35,7 @@ app.router.add_get('/video_feed', stream)
 
 if __name__ == '__main__':
     web.run_app(app, host='192.168.4.2', port='5000')
+    
+# sudo iptables -A INPUT -p tcp --dport 5000 -j ACCEPT
+
+
