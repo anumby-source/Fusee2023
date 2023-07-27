@@ -24,7 +24,7 @@ async def fetch(session, url):
         return content
 
 async def stream(request):
-    url = "http://monserveurweb.com/chemin/vers/image.jpg" # Replace this with the URL of your image
+    url = "http://192.168.4.1:80/capture" # Replace this with the URL of your image
 
     async def generate():
         while True:
