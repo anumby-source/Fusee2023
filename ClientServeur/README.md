@@ -26,7 +26,7 @@ comme le nom du réseau et le mot de passe.
 Pour cela, éditez le fichier /etc/hostapd/hostapd.conf et ajoutez des lignes comme les suivantes :
 
 interface=wlan0
-ssid=MonReseau
+ssid=AnumbyFusee
 hw_mode=g
 channel=7
 wmm_enabled=0
@@ -34,7 +34,7 @@ macaddr_acl=0
 auth_algs=1
 ignore_broadcast_ssid=0
 wpa=2
-wpa_passphrase=MonMotDePasse
+wpa_passphrase=123456789
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
@@ -72,7 +72,7 @@ Voici comment vous pouvez le faire :
 dans le répertoire /etc/systemd/system. Par exemple, si votre application s'appelle myapp,  
 vous pouvez créer un fichier appelé myapp.service:
 
-sudo nano /etc/systemd/system/myapp.service
+sudo nano /etc/systemd/system/routeurfusee.service
 
 [Unit]
 Description=Routeur_Fusee
@@ -83,7 +83,7 @@ Restart=always
 User=pi
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=myapp
+SyslogIdentifier=routeurfusee
 
 [Install]
 WantedBy=multi-user.target
