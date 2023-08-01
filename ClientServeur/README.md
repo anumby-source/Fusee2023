@@ -93,18 +93,18 @@ WantedBy=multi-user.target
 Enregistrez et fermez le fichier. Maintenant, vous pouvez dire à systemd de  
 démarrer ce service au démarrage et de lancer le service immédiatement :
 
-sudo systemctl enable myapp
-sudo systemctl start myapp
+sudo systemctl enable routeurfusee
+sudo systemctl start routeurfusee
 
 # Suivi du service:
 
 Vous pouvez vérifier le statut de votre service à tout moment en utilisant la commande :
 
-sudo systemctl status myapp
+sudo systemctl status routeurfusee
 
 Et vous pouvez voir les logs de votre application avec :
 
-sudo journalctl -u myapp
+sudo journalctl -u routeurfusee
 
 Notez que cette configuration suppose que vous utilisez Python 3 et que  
 l'interpréteur Python est situé à /usr/bin/python3. Si ce n'est pas le cas,  
