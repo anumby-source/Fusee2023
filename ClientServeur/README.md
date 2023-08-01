@@ -75,10 +75,10 @@ vous pouvez créer un fichier appelé myapp.service:
 sudo nano /etc/systemd/system/myapp.service
 
 [Unit]
-Description=My Python App
+Description=Routeur_Fusee
 
 [Service]
-ExecStart=/usr/bin/python3 /chemin/vers/votre/script.py
+ExecStart=/usr/bin/python3 /home/pi/Fusee2023/ClientServeur/clientserveur_aio.py
 Restart=always
 User=pi
 StandardOutput=syslog
