@@ -78,7 +78,7 @@ sudo nano /etc/systemd/system/routeurfusee.service
 Description=Routeur_Fusee
 
 [Service]
-ExecStart=/usr/bin/python3 /home/pi/Fusee2023/ClientServeur/clientserveur_aio.py
+ExecStart=/usr/bin/python3 /home/pi/Fusee2023/ClientServeur/routeurfusee.py
 Restart=always
 User=pi
 StandardOutput=syslog
